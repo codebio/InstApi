@@ -193,16 +193,16 @@ Tarjeta Vencida:
 
 ```json
 {
-    "success":false,
-    "message":"Tarjeta de CrÃ©dito Expirada",
-    "id":null,
-    "code":"400",
-    "reference":null,
-    "voucher":null,
-    "ordernumber":null,
-    "sequence":null,
-    "approval":null,
-    "lote":null
+  "success":false,
+  "message":"Tarjeta de Crédito Expirada",
+  "id":null,
+  "code":"400",
+  "reference":null,
+  "voucher":null,
+  "ordernumber":null,
+  "sequence":null,
+  "approval":null,
+  "lote":null
 }
 ```
 
@@ -210,15 +210,15 @@ Problemas con las credenciales (api key):
 
 ```json
 {
-    "success":false,
-    "message":"Error de autenticaciÃ³n. Revise sus credenciales.",
-    "id":null,
-    "code":"401",
-    "reference":null,
-    "voucher":null,
-    "ordernumber":null,
-    "sequence":null,
-    "approval":null,
-    "lote":null
+  "success": false,
+  "message": "Error de autenticación. Revise sus credenciales.",
+  "id": null,
+  "code": "401",
+  "reference": null,
+  "voucher": null,
+  "ordernumber": null,
+  "sequence": null,
+  "approval": null,
+  "lote": null
 }
 ```
