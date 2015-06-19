@@ -21,12 +21,14 @@ https://api.instapago.com
 #### Crear Pago
 Este método consta del envío de los datos de un pago con tarjeta de crédito a Instapago
 para su autorización:
+
 ```
 https://api.instapago.com/payment
 Método: POST
 ```
 
 #### FormData:
+
 * KeyId (Requerido): Llave generada desde Instapago.
 * PublicKeyId (Requerido): Llave compartida Enviada por correo al crear una cuenta
 en instapago.
@@ -54,7 +56,7 @@ bancos para mayor seguridad.
 * State (Opcional): Estado o provincia asociada a la tarjeta, Utilizada por algunos
 bancos para mayor seguridad.
 
-#### Respuesta:
+Respuesta:
 
 * Tipo: ```application/json```.
 * Valor:
@@ -86,8 +88,6 @@ Método: POST
 en Instapago.
 * Id (Requerido): Identificador único del pago.
 * Amount (Requerido): Monto por el cual se desea procesar el pago final.
-Documento propiedad de Tecnología Instapago C.A. Prohibida su reproducción total o parcial.
-
 
 Respuesta
 * Tipo: ```application/json```
@@ -148,7 +148,8 @@ Parámetros:
 * PublicKeyId (Requerido): Llave compartida Enviada por correo al crear una cuenta en Instapago.
 * Id (Requerido): Identificador único del pago.
 
-#### Respuesta
+Respuesta
+
 * Tipo: ```application/json```
 * Valor:
 
