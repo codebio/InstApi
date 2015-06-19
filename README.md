@@ -1,6 +1,15 @@
 ## InstApi
 Ejemplo de uso de la API de Instapago con php
 ---
+## Requerimientos:
+
+* Registro en http://instapago.com/
+* Api key
+    * Ir a https://banesco.instapago.com/Account/API
+    * Generar la llave
+    * Solicitar el envío de la llave publica por correo
+
+> La llave pública es enviada al hacer el registro
 
 #### Punto de Entrada del API
 Todas las interacciones con Instapago se realizan a través de la siguiente dirección:
@@ -222,3 +231,4 @@ Problemas con las credenciales (api key):
   "lote": null
 }
 ```
+> De tener este tipo de problema en especifico deben comunicarse con el personal de instapago a los numeros  +58 (212) 963.99.22 / +58 (212) 963.01.22
