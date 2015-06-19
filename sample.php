@@ -2,21 +2,21 @@
 
   $url = 'https://api.instapago.com/payment';
   $fields = array(
-                    "KeyID" => "",
-                    "PublicKeyId" => "",
-                    "Amount" => "1",
-                    "Description" => "",
-                    "CardHolder" => "",
-                    "CardHolderId" => "",
-                    "CardNumber" => "",
-                    "CVC" => "",
-                    "ExpirationDate" => "",
-                    "StatusId" => "",
-                    "Address" => "",
-                    "City" => "",
-                    "ZipCode" => "",
-                    "State" => ""
-   );
+      "KeyID" => "",
+      "PublicKeyId" => "",
+      "Amount" => "1",
+      "Description" => "",
+      "CardHolder" => "",
+      "CardHolderId" => "",
+      "CardNumber" => "",
+      "CVC" => "",
+      "ExpirationDate" => "",
+      "StatusId" => "",
+      "Address" => "",
+      "City" => "",
+      "ZipCode" => "",
+      "State" => ""
+  );
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,$url );
   curl_setopt($ch, CURLOPT_POST, 1);

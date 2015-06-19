@@ -1,5 +1,5 @@
-# InstApi
-Ejemplo de uso de la API de Instapago
+## InstApi
+Ejemplo de uso de la API de Instapago con php
 ---
 
 #### Punto de Entrada del API
@@ -17,7 +17,6 @@ https://api.instapago.com/payment
 Método: POST
 ```
 
-
 #### FormData:
 * KeyId (Requerido): Llave generada desde Instapago.
 * PublicKeyId (Requerido): Llave compartida Enviada por correo al crear una cuenta
@@ -33,8 +32,8 @@ separadores.
 * ExpirationDate (Requerido): Fecha de expiración de la tarjeta en el formato mostrado
 en la misma MM/YYYY. Por Ejemplo: 10/2014.
 * StatusId (Requerido): Estatus en el que se creará la transacción.
-	* "1": Retener (pre-autorización).
-	* "2": Pagar (autorización).
+    * "1": Retener (pre-autorización).
+    * "2": Pagar (autorización).
 * IP (Requerido): Dirección IP del cliente.
 * OrderNumber (Opcional): Numero de orden del pago según el comercio.
 * Address (Opcional): Dirección asociada a la tarjeta, Utilizada por algunos bancos
@@ -47,19 +46,19 @@ bancos para mayor seguridad.
 bancos para mayor seguridad.
 
 #### Respuesta:
-  
+
 * Tipo: ```application/json```.
 * Valor:
 
 ```
 {
-	"success": Indica si fue procesado el pago (true o false),
-	"message": Descripción de la respuesta (Máx. 200 caracteres),
-	"id": Código del pago (Máx. 8 caracteres),
-	"code": Código del respuesta del pago (Máx. 3 caracteres),
-	"reference": Código de referencia bancaria (Máx. 6 caracteres),
-	"voucher": HTML que contiene el recibo del pago,
-	"ordernumber": Número de orden indicado por el comercio
+    "success": Indica si fue procesado el pago (true o false),
+    "message": Descripción de la respuesta (Máx. 200 caracteres),
+    "id": Código del pago (Máx. 8 caracteres),
+    "code": Código del respuesta del pago (Máx. 3 caracteres),
+    "reference": Código de referencia bancaria (Máx. 6 caracteres),
+    "voucher": HTML que contiene el recibo del pago,
+    "ordernumber": Número de orden indicado por el comercio
 }
 ```
 
@@ -79,7 +78,7 @@ en Instapago.
 * Id (Requerido): Identificador único del pago.
 * Amount (Requerido): Monto por el cual se desea procesar el pago final.
 Documento propiedad de Tecnología Instapago C.A. Prohibida su reproducción total o parcial.
-	
+
 
 Respuesta
 * Tipo: ```application/json```
@@ -87,13 +86,13 @@ Respuesta
 
 ```
 {
-	"success": Indica si fue procesado el pago (true o false),
-	"message": Descripción de la respuesta (Máx. 200 caracteres),
-	"id": Código del pago (Máx. 8 caracteres),
-	"code": Código del respuesta del pago (Máx. 3 caracteres),
-	"reference": Código de referencia bancaria (Máx. 6 caracteres),
-	"voucher": HTML que contiene el recibo del pago,
-	"ordernumber": Número de orden indicado por el comercio 
+    "success": Indica si fue procesado el pago (true o false),
+    "message": Descripción de la respuesta (Máx. 200 caracteres),
+    "id": Código del pago (Máx. 8 caracteres),
+    "code": Código del respuesta del pago (Máx. 3 caracteres),
+    "reference": Código de referencia bancaria (Máx. 6 caracteres),
+    "voucher": HTML que contiene el recibo del pago,
+    "ordernumber": Número de orden indicado por el comercio
 }
 ```
 #### Anular Pago
@@ -117,11 +116,72 @@ Respuesta
 
 ```
 {
-	"success": Indica si fue procesado el pago (true o false),
-	"message": Descripción de la respuesta (Máx. 200 caracteres),
-	"id": Código del pago (Máx. 8 caracteres),
-	"code": Código del respuesta del pago (Máx. 3 caracteres),
-	"reference": Código de referencia bancaria (Máx. 6 caracteres),
-	"ordernumber": Número de orden indicado por el comercio 
+    "success": Indica si fue procesado el pago (true o false),
+    "message": Descripción de la respuesta (Máx. 200 caracteres),
+    "id": Código del pago (Máx. 8 caracteres),
+    "code": Código del respuesta del pago (Máx. 3 caracteres),
+    "reference": Código de referencia bancaria (Máx. 6 caracteres),
+    "ordernumber": Número de orden indicado por el comercio
 }
 ```
+
+#### Consulta de Pago
+
+Este método funciona para consultar un pago generado anteriormente.
+
+```
+https://api.instapago.com/payment
+Método: GET
+```
+
+Parámetros:
+* KeyId (Requerido): Llave generada desde Instapago.
+* PublicKeyId (Requerido): Llave compartida Enviada por correo al crear una cuenta en Instapago.
+* Id (Requerido): Identificador único del pago.
+
+#### Respuesta
+* Tipo: ```application/json```
+* Valor:
+
+```
+{
+    "success": Indica si fue procesado el pago (true o false),
+    "message": Descripción de la respuesta (Máx. 200 caracteres),
+    "id": Código del pago (Máx. 8 caracteres),
+    "code": Código del respuesta del pago (Máx. 3 caracteres),
+    "reference": Código de referencia bancaria (Máx. 6 caracteres),
+    "voucher": HTML que contiene el recibo del pago,
+    "ordernumber": Número de orden indicado por el comercio
+}
+```
+
+## Códigos de respuesta
+
+Para todas las transacciones realizadas bajo el API, los códigos HTTP de respuestas corresponden a los siguientes estados:
+
+* ```201```: Pago procesado con éxito.
+* ```400```: Error al validar los datos enviados (Adicionalmente se devuelve una cadena de
+caracteres con la descripción del error).
+* ```401```: Error de autenticación, ha ocurrido un error con las llaves utilizadas.
+* ```403```: Pago Rechazado por el banco.
+* ```500```: Ha Ocurrido un error interno dentro del servidor.
+* ```503```: Ha Ocurrido un error al procesar los parámetros de entrada. Revise los datos
+enviados y vuelva a intentarlo.
+
+> **Importante**: Si recibe un código de respuesta diferente a los antes descritos deben ser tomados como errores de protocolo HTTP.
+
+## Tarjetas de prueba
+Para realizar las pruebas, se provee de los siguientes datos para comprobar la integración:
+* Tarjetas aprobadas:
+Pueden indicar cualquier valor para Cédula o RIF, Fecha de Vencimiento y CVC:
+
+    * Visa: ``4111 1111 1111 1111```
+    * American Express: ```3782 8224 631 0005```
+    * MasterCard: ```5105 1051 0510 5100```
+    * Sambil: ``8244 0011 0011 0011``
+    * Rattan: ``8244 0211 0011 0011```
+    * Locatel: ``8244 0411 0011 0011```
+
+* Tarjeta rechazada:
+Cualquier número de tarjeta de crédito Visa, MasterCard, American Express, Sambil, Rattan y Locatel válidas serán "Rechazadas". Esto no genera ninguna transacción con el Banco.
+￼￼
