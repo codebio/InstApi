@@ -5,17 +5,17 @@
       "KeyID" => "",
       "PublicKeyId" => "",
       "Amount" => "1",
-      "Description" => "",
-      "CardHolder" => "",
-      "CardHolderId" => "",
-      "CardNumber" => "",
-      "CVC" => "",
-      "ExpirationDate" => "",
-      "StatusId" => "",
-      "Address" => "",
-      "City" => "",
-      "ZipCode" => "",
-      "State" => ""
+      "Description" => "Un cobro de prueba",
+      "CardHolder" => "Lorem Ipsum",
+      "CardHolderId" => "12345678",
+      "CardNumber" => "8244001100110011",
+      "CVC" => "123",
+      "ExpirationDate" => "10/2015",
+      "StatusId" => "1",
+      "Address" => "Urb Lipsum",
+      "City" => "Valencia",
+      "ZipCode" => "2001",
+      "State" => "Carabobo"
   );
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,$url );

@@ -176,14 +176,49 @@ Para realizar las pruebas, se provee de los siguientes datos para comprobar la i
 * Tarjetas aprobadas:
 Pueden indicar cualquier valor para Cédula o RIF, Fecha de Vencimiento y CVC:
 
-    * Visa: ``4111 1111 1111 1111```
-    * American Express: ```3782 8224 631 0005```
-    * MasterCard: ```5105 1051 0510 5100```
-    * Sambil: ```8244 0011 0011 0011``
-    * Rattan: ```8244 0211 0011 0011```
-    * Locatel: ```8244 0411 0011 0011```
+    * Visa: ```4111111111111111```
+    * American Express: ```378282246310005```
+    * MasterCard: ```5105105105105100```
+    * Sambil: ```8244001100110011``
+    * Rattan: ```8244021100110011```
+    * Locatel: ```8244041100110011```
 
 * Tarjeta rechazada:
 
 Cualquier número de tarjeta de crédito Visa, MasterCard, American Express, Sambil, Rattan y Locatel válidas serán "Rechazadas". Esto no genera ninguna transacción con el Banco.
 ￼￼
+### Ejemplos de respuesta:
+
+Tarjeta Vencida:
+
+```json
+{
+    "success":false,
+    "message":"Tarjeta de CrÃ©dito Expirada",
+    "id":null,
+    "code":"400",
+    "reference":null,
+    "voucher":null,
+    "ordernumber":null,
+    "sequence":null,
+    "approval":null,
+    "lote":null
+}
+```
+
+Problemas con las credenciales (api key):
+
+```json
+{
+    "success":false,
+    "message":"Error de autenticaciÃ³n. Revise sus credenciales.",
+    "id":null,
+    "code":"401",
+    "reference":null,
+    "voucher":null,
+    "ordernumber":null,
+    "sequence":null,
+    "approval":null,
+    "lote":null
+}
+```
