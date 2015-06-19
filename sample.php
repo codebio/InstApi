@@ -12,6 +12,7 @@
       "CVC" => "123",
       "ExpirationDate" => "10/2015",
       "StatusId" => "1",
+      "IP" => "192.168.30.10"
       "Address" => "Urb Lipsum",
       "City" => "Valencia",
       "ZipCode" => "2001",
