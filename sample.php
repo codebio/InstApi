@@ -2,8 +2,8 @@
 
   $url = 'https://api.instapago.com/payment';
   $fields = array(
-      "KeyID" => "",
-      "PublicKeyId" => "",
+      "KeyID" => "1A21FE00-A9D7-41F9-A8FF-1F50605A0933",
+      "PublicKeyId" => "e9a5893e047b645fed12c82db877e05a",
       "Amount" => "1",
       "Description" => "Un cobro de prueba",
       "CardHolder" => "Lorem Ipsum",
@@ -12,7 +12,7 @@
       "CVC" => "123",
       "ExpirationDate" => "10/2015",
       "StatusId" => "1",
-      "IP" => "192.168.30.10"
+      "IP" => "192.168.30.10",
       "Address" => "Urb Lipsum",
       "City" => "Valencia",
       "ZipCode" => "2001",
