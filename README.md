@@ -172,16 +172,18 @@ enviados y vuelva a intentarlo.
 
 ## Tarjetas de prueba
 Para realizar las pruebas, se provee de los siguientes datos para comprobar la integración:
+
 * Tarjetas aprobadas:
 Pueden indicar cualquier valor para Cédula o RIF, Fecha de Vencimiento y CVC:
 
     * Visa: ``4111 1111 1111 1111```
     * American Express: ```3782 8224 631 0005```
     * MasterCard: ```5105 1051 0510 5100```
-    * Sambil: ``8244 0011 0011 0011``
-    * Rattan: ``8244 0211 0011 0011```
-    * Locatel: ``8244 0411 0011 0011```
+    * Sambil: ```8244 0011 0011 0011``
+    * Rattan: ```8244 0211 0011 0011```
+    * Locatel: ```8244 0411 0011 0011```
 
 * Tarjeta rechazada:
+
 Cualquier número de tarjeta de crédito Visa, MasterCard, American Express, Sambil, Rattan y Locatel válidas serán "Rechazadas". Esto no genera ninguna transacción con el Banco.
 ￼￼
