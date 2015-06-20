@@ -1,4 +1,5 @@
-## InstApi
+![Intapago](instapago.jpg)
+
 Ejemplo de uso de la API de Instapago con php
 ---
 ## Requerimientos:
@@ -233,3 +234,11 @@ Problemas con las credenciales (api key):
 }
 ```
 > De tener este tipo de problema en especifico deben comunicarse con el personal de instapago a los numeros  +58 (212) 963.99.22 / +58 (212) 963.01.22
+
+## Herramientas de prueba
+
+![Postman](postman.png)
+
+>Postman: Supercharge your API workflow. Build, test, and document your APIs faster. More than a million developers already do.
+
+https://www.getpostman.com/
