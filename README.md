@@ -1,4 +1,4 @@
-![Intapago](instapago.jpg)
+![Intapago](instapago-banesco.png)
 
 Ejemplo de uso de la API de Instapago con php
 ---
