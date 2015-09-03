@@ -1,77 +1,16 @@
-commit 1c9b0d1f66ad7890f6168381790e586de25536ea
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:56:20 2015 -0430
-
-    Actualizando repo
-
-commit e569c0a32153d5cd6f78eb0a76a60173526f3e06
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:30:24 2015 -0430
-
-    Actualizando repo
-
-commit 91e02971619ff1e9504f53a940149f982bcba054
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:29:37 2015 -0430
-
-    typo
-
-commit 62a3c9ccae006f2a79fabbc310e4197819431187
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:27:46 2015 -0430
-
-    Actualizando repo
-
-commit 963888d2a5fb2374bd83649a0325b549df6745fc
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:25:16 2015 -0430
-
-    typo
-
-commit fa1a33c372433e79d41415959310d96294ad8e8c
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 19:20:42 2015 -0430
-
-    Actualizando repo
-
-commit 499660d4b44c8dbca0843f933ccc8ff35bb0f958
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 18:54:09 2015 -0430
-
-    typo
-
-commit 362f7465b0ad24fbb33647d7ce6cbcbc121cf4db
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 18:48:40 2015 -0430
-
-    Actualizando repo
-
-commit 682883c3f2aff1d03e744ccb554b4473406e1ef4
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 18:37:49 2015 -0430
-
-    Actualizando repo
-
-commit 44ea36fdefbc6d8d0b8e9ca74ea2dc50d6a438b1
-Author: abr4xas <me@abr4xas.org>
-Date:   Fri Jun 19 18:36:47 2015 -0430
-
-    Actualizando repo
-
-commit c66aea2f8dfa0505dfad00816b0c077a2609a43c
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Fri Jun 19 15:05:13 2015 -0430
-
-    Update README.md
-
-commit 22e9649dd850dba6625ab87d09c84f478254b8a4
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Fri Jun 19 13:32:33 2015 -0430
-
-    Create sample.php
-
-commit f8a0d2d3a487c4b6d095f3f61e2225674e53926f
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Fri Jun 19 13:21:28 2015 -0430
-
-    Initial commit
+* [31m6652e9b[m - [32mángel[m - [33m (HEAD -> master, origin/master, origin/HEAD)[m Update .gitignore [32m(7 weeks ago)[m
+* [31m79a5cc7[m - [32mángel[m - [33m[m Update .gitignore [32m(7 weeks ago)[m
+* [31m180de21[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m1c9b0d1[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31me569c0a[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m91e0297[m - [32mabr4xas[m - [33m[m typo [32m(3 months ago)[m
+* [31m62a3c9c[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m963888d[m - [32mabr4xas[m - [33m[m typo [32m(3 months ago)[m
+* [31mfa1a33c[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m499660d[m - [32mabr4xas[m - [33m[m typo [32m(3 months ago)[m
+* [31m362f746[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m682883c[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31m44ea36f[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(3 months ago)[m
+* [31mc66aea2[m - [32mángel[m - [33m[m Update README.md [32m(3 months ago)[m
+* [31m22e9649[m - [32mángel[m - [33m[m Create sample.php [32m(3 months ago)[m
+* [31mf8a0d2d[m - [32mángel[m - [33m[m Initial commit [32m(3 months ago)[m

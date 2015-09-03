@@ -105,6 +105,10 @@ Respuesta
     "ordernumber": Número de orden indicado por el comercio
 }
 ```
+### Ejemplo de voucher
+
+![voucher](voucher.png)
+
 #### Anular Pago
 Este método funciona para procesar una anulación de un pago, ya sea un pago o un
 bloqueo.
@@ -233,7 +237,7 @@ Problemas con las credenciales (api key):
   "lote": null
 }
 ```
-> De tener este tipo de problema en especifico deben comunicarse con el personal de instapago a los numeros  +58 (212) 963.99.22 / +58 (212) 963.01.22
+> De tener este tipo de problema en especifico, debe cambiar el estado de `Key ID` a ativa en el apartado de "Configuración del API" de persistir el inconveniente debe comunicarse con el personal de instapago a los numeros  +58 (212) 963.99.22 / +58 (212) 963.01.22
 
 ## Herramientas de prueba
 
