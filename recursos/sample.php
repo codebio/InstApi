@@ -13,7 +13,6 @@ $CardNumber     = trim($_POST["cardNumber"]);
 $CVC            = trim($_POST["cardCVC"]);
 $ExpirationDate = trim($_POST["cardExpiry"]);
 
-
 // https://www.chriswiegman.com/2014/05/getting-correct-ip-address-php/
 function get_ip() {
     if ( function_exists( 'apache_request_headers' ) ) {

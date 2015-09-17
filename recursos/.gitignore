@@ -1,5 +1,8 @@
 *
 !.gitignore
+!README.md
 !sample.php
 !form.html
 !css.css
+!form-emjemplo.png
+!form-emjemplo-respuesta.png
